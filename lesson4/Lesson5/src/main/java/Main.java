@@ -15,13 +15,14 @@ public class Main {
         System.out.println("-------------------------");
 
         Employee[] persArray = new Employee[5];
-        persArray[0] = new Employee("Иван", "Иванов", 45, 50000);
-        persArray[1] = new Employee("Пётр", "Петров", 24, 20000);
-        persArray[2] = new Employee("Семён", "Семёнов", 40, 35000);
-        persArray[3] = new Employee("Андрей", "Андреев", 24, 20000);
-        persArray[4] = new Employee("Максим", "Максимов", 40, 35000);
+        persArray[0] = employee1;
+        persArray[1] = employee2;
+        persArray[2] = employee3;
+        persArray[3] = employee4;
+        persArray[4] = employee5;
         for (int i=0; i < persArray.length; i++)
-            if (persArray[i].getAge() == 40) persArray[i].printInfo();
+            if (persArray[i].getAge() > 40) persArray[i].printInfo();
+
 
     }
 }

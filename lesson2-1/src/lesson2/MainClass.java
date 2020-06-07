@@ -38,7 +38,7 @@ public class MainClass {
         int[] arr = new int[8];
         for (int i = 0; i < arr.length; i++){
             arr[i] = i * 3;
-            }
+        }
         System.out.println(Arrays.toString(arr));
     }
     /*3. Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ] пройти по нему циклом,
@@ -61,10 +61,10 @@ public class MainClass {
      и с помощью цикла(-ов) заполнить его диагональные элементы единицами;*/
 
     public static void fillDiagonal() {
-        int[][] arr = new int[4][4];
-        for (int i = 0; i < 4; i++) {
+        int[][] arr = new int[5][5];
+        for (int i = 0; i < arr.length; i++) {
             arr[i][i] = 1;
-            arr[i][3 - i] = 1;
+            arr[i][4 - i] = 1;
         }
         System.out.println(Arrays.deepToString(arr));
     }
