@@ -20,9 +20,9 @@ public class Main {
         persArray[2] = employee3;
         persArray[3] = employee4;
         persArray[4] = employee5;
-        for (int i=0; i < persArray.length; i++)
+        for (int i=0; i < persArray.length; i++) {
             if (persArray[i].getAge() > 40) persArray[i].printInfo();
-
+        }
 
     }
 }
